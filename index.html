@@ -30,6 +30,53 @@
         h2{
             color:#4CAF50;
         }
+
+        /* ---- ส่วนที่เพิ่มสไตล์สำหรับประวัติการศึกษา ---- */
+        .education-item {
+            margin-bottom: 15px;
+            border-left: 3px solid #4CAF50; /* เพิ่มเส้นสีเขียวด้านซ้าย */
+            padding-left: 15px;
+        }
+        .education-item h3 {
+            margin: 0 0 5px 0;
+            color: #333;
+            font-size: 1.1rem;
+        }
+        .institution {
+            margin: 0;
+            font-weight: bold;
+            color: #555;
+        }
+        .year {
+            margin: 5px 0 0 0;
+            color: #777;
+            font-size: 0.9rem;
+        }
+
+        /* ---- ส่วนที่เพิ่มสไตล์สำหรับทักษะความสามารถ ---- */
+        .skills-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* จัดเรียงเป็นกล่องตามขนาดหน้าจอ */
+            gap: 15px;
+            margin-top: 15px;
+        }
+        .skills-category {
+            background: #f9f9f9;
+            padding: 15px;
+            border-radius: 8px;
+            border: 1px solid #eee;
+        }
+        .skills-category h3 {
+            margin-top: 0;
+            color: #4CAF50;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 5px;
+            font-size: 1rem;
+        }
+        .skills-category ul {
+            padding-left: 20px;
+            margin-bottom: 0;
+        }
     </style>
 </head>
 <body>
@@ -41,7 +88,45 @@
 
 <section>
     <h2>ข้อมูลส่วนตัว</h2>
-    <p>ใส่ข้อมูลของคุณที่นี่</p>
+    <p>ชื่อนายคุณาพัฒน์ ปลอดภัย เด็กหนุ่มผู้ที่พร้อมพัฒนาไปเรื่อยๆ แรงบันดาลใจในการสมัครคือมีความหลงใหลในด้านคอมพิวเตอร์มาตั้งแต่เด็ก</p>
+</section>
+
+<!-- ================= ส่วนที่เพิ่มเข้ามาใหม่: ประวัติการศึกษา ================= -->
+<section>
+    <h2>ประวัติการศึกษา</h2>
+    <div class="education-item">
+        <h3>ระดับมัธยมศึกษาตอนปลาย</h3>
+        <p class="institution">โรงเรียนของคุณ (กรุณาเปลี่ยนชื่อโรงเรียนตรงนี้)</p>
+        <p class="year">ปีที่ศึกษา: พ.ศ. 2566 - ปัจจุบัน</p>
+    </div>
+    <div class="education-item">
+        <h3>ระดับมัธยมศึกษาตอนต้น</h3>
+        <p class="institution">กระทุ่มแบน "วิเศษสมุทคุณ"</p>
+        <p class="year">ปีที่ศึกษา: พ.ศ. 2564 - 2569</p>
+    </div>
+</section>
+
+<!-- ================= ส่วนที่เพิ่มเข้ามาใหม่: ทักษะความสามารถ ================= -->
+<section>
+    <h2>ทักษะและความสามารถ</h2>
+    <div class="skills-container">
+        <div class="skills-category">
+            <h3>ด้านคอมพิวเตอร์ & เทคโนโลยี</h3>
+            <ul>
+                <li>การเขียนโค้ดเว็บไซต์เบื้องต้น (HTML / CSS)</li>
+                <li>การใช้งาน Git และ GitHub</li>
+                <li>การประกอบและบำรุงรักษาคอมพิวเตอร์</li>
+            </ul>
+        </div>
+        <div class="skills-category">
+            <h3>ทักษะการทำงาน (Soft Skills)</h3>
+            <ul>
+                <li>ความกระตือรือร้นในการเรียนรู้เทคโนโลยี</li>
+                <li>การคิดวิเคราะห์และแก้ไขปัญหา</li>
+                <li>การปรับตัวและพัฒนาตัวเอง</li>
+            </ul>
+        </div>
+    </div>
 </section>
 
 <section>
